@@ -1,4 +1,4 @@
-package io.dcloud.uniplugin;
+package com.anna.systempicture;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ import android.util.Log;
  * copyright: https://github.com/TangAnna
  */
 public class MsgLog {
-    private static final String TAG_PREFIX = "uni_plugin_picture:";
+    private static final String TAG_PREFIX = "uni_plugin_sysPicture:";
 
     public static void d(String msg) {
         Log.d(TAG_PREFIX, "d: " + msg);

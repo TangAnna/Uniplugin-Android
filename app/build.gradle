@@ -81,4 +81,5 @@ dependencies {
     implementation project(':uniplugin_module')
     implementation project(':uniplugin_richalert')
     implementation project(':uniplugin_automaticsms')
+    implementation project(':uniplugin_systempicture')
 }
