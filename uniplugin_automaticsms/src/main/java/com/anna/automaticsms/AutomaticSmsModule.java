@@ -2,6 +2,7 @@ package com.anna.automaticsms;
 
 import android.content.IntentFilter;
 
+import androidx.annotation.Keep;
 import androidx.annotation.NonNull;
 
 import com.alibaba.fastjson.JSONObject;
@@ -26,6 +27,7 @@ import io.dcloud.feature.uniapp.common.UniModule;
  * email: 18201399976@163.com
  * copyright: https://github.com/TangAnna
  */
+@Keep
 public class AutomaticSmsModule extends UniModule {
 
     private AnnaSmsBroadcastReceiver mSmsBroadcastReceiver;
