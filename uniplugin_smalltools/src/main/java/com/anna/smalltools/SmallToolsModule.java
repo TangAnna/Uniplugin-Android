@@ -96,4 +96,33 @@ public class SmallToolsModule extends UniModule {
         callback.invoke(object);
         MsgLog.d("交互名称：highlight 回调参数：" + object);
     }
+
+    /**
+     * 禁止截屏幕
+     */
+    @UniJSMethod(uiThread = true)
+    public void disallowScreenshots() {
+        MsgLog.d("交互名称：disallowScreenshots");
+        //禁止截屏
+        if ((((Activity) mUniSDKInstance.getContext()).getWindow().getAttributes().flags & WindowManager.LayoutParams.FLAG_SECURE) != 0) {
+            MsgLog.d("flag already set secure");
+            return;
+        }
+        ((Activity) mUniSDKInstance.getContext()).getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);
+    }
+
+    /**
+     * 允许截屏幕
+     */
+    @UniJSMethod(uiThread = true)
+    public void allowScreenshots() {
+        MsgLog.d("交互名称：allowScreenshots");
+        //可以截屏
+        if ((((Activity) mUniSDKInstance.getContext()).getWindow().getAttributes().flags & WindowManager.LayoutParams.FLAG_SECURE) == 0) {
+            MsgLog.d("flag already set unsecure");
+            return;
+        }
+        ((Activity) mUniSDKInstance.getContext()).getWindow().clearFlags(WindowManager.LayoutParams.FLAG_SECURE);
+    }
+
 }
