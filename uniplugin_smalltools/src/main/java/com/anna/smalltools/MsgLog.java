@@ -1,4 +1,4 @@
-package com.anna.systempicture;
+package com.anna.smalltools;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ import android.util.Log;
  * copyright: https://github.com/TangAnna
  */
 public class MsgLog {
-    private static final String TAG_PREFIX = "uni_plugin_sysPicture:=======";
+    private static final String TAG_PREFIX = "uni_plugin_smalltools=======: ";
 
     public static void d(String msg) {
         Log.d(TAG_PREFIX,msg);

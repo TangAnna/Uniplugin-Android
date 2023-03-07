@@ -28,6 +28,24 @@
       ]
     },
     {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "SystemPicture",
+          "class": "com.anna.systempicture.SystemPictureModule"
+        }
+      ]
+    },
+    {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "SmallTools",
+          "class": "com.anna.smalltools.SmallToolsModule"
+        }
+      ]
+    },
+    {
       "hooksClass": "",
       "plugins": [
         {
