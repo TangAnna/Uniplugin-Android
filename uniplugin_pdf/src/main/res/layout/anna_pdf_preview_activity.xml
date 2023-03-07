@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/anna_layout_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/anna_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/anna_close"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="14dp"
+            android:src="@drawable/anna_ic_arrow_back_left" />
+
+        <TextView
+            android:id="@+id/anna_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingVertical="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="title"
+            tools:textColor="#FF000000" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/anna_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/anna_layout_navigation" />
+
+</RelativeLayout>

@@ -83,4 +83,5 @@ dependencies {
     implementation project(':uniplugin_automaticsms')
     implementation project(':uniplugin_systempicture')
     implementation project(':uniplugin_smalltools')
+    implementation project(':uniplugin_pdf')
 }

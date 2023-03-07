@@ -46,6 +46,15 @@
       ]
     },
     {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "PdfPreview",
+          "class": "com.anna.pdf.PdfPreviewModule"
+        }
+      ]
+    },
+    {
       "hooksClass": "",
       "plugins": [
         {
