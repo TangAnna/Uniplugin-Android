@@ -56,7 +56,7 @@ public class PdfPreviewActivity extends AppCompatActivity {
         }
         initWebView();
         mWebView.loadUrl("file:///android_asset/pdf/index.html?" + getPath());
-        MsgLog.d("pdf本地地址：" + getPath());
+        MsgLog.d("==加载地址：" + mWebView.getUrl());
     }
 
     public void initWebView() {
@@ -129,10 +129,10 @@ public class PdfPreviewActivity extends AppCompatActivity {
     public String getPath() {
         // content://media/external_primary/downloads/680
 //        return getIntent().getExtras().getString("path");
-
 //        return "file:///android_asset/example.pdf";
 //        return "/storage/emulated/0/Download/4100000013_1678180470372.pdf";
-        return "https://www.cfca.com.cn/upload/20211117flsm.pdf";
+//        return "https://www.cfca.com.cn/upload/20211117flsm.pdf";
+        return getIntent().getExtras().getString("path");
     }
 
     @Override
